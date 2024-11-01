@@ -10,6 +10,10 @@ body {
     color: #333;
 }
 
+.logo-image {
+    width: 100px;
+    height: auto;
+}
 /* Header Section */
 .header {
     display: flex;

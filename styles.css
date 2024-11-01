@@ -17,6 +17,10 @@ body {
     align-items: center;
     padding: 20px;
     border-bottom: 1px solid #e3e4e5;
+    position: fixed;
+    width: 100%;
+    background: white;
+    z-index: 1000;
 }
 
 .header-left {
@@ -38,6 +42,7 @@ body {
 .header-nav {
     display: flex;
     gap: 20px;
+	align-items: center;
 }
 
 .header-nav a {
@@ -63,6 +68,10 @@ body {
 .intro {
     text-align: center;
     padding: 60px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .main-title {
@@ -85,6 +94,7 @@ body {
     font-size: 1rem;
     text-decoration: none;
     border-radius: 5px;
+    display: inline-block;
 }
 
 /* Features Section */
@@ -94,6 +104,8 @@ body {
     gap: 60px;
     padding: 50px 20px;
     background-color: #f9f9f9;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 .feature {
@@ -124,15 +136,6 @@ body {
     margin-bottom: 20px;
 }
 
-.btn-feature {
-    color: #fff;
-    background-color: #1c7ce2;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 0.9rem;
-}
-
 .feature-image {
     flex: 1;
     display: flex;
@@ -150,7 +153,15 @@ body {
 .about {
     padding: 50px 20px;
     background-color: #f9f9f9;
-    text-align: left;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
 }
 
 .about-title {
@@ -169,17 +180,27 @@ body {
 
 .social-links {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .social-links a {
     color: #1c7ce2;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-decoration: none;
-    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .social-links a:hover {
     text-decoration: underline;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
 }
 
 /* Footer */
